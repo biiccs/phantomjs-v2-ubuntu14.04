@@ -1,0 +1,8 @@
+var page = require('webpage').create(),
+    system = require('system'),
+    address, output;
+page.viewportSize = { width: 1024, height: 768 };
+page.open('http://skrendu.lt/', function() {
+  page.render('skrendu-phantomjs.pdf');
+  phantom.exit();
+});
